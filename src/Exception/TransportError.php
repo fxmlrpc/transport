@@ -27,6 +27,6 @@ final class TransportError extends \RuntimeException implements TransportExcepti
      */
     public static function createFromException(\Exception $e)
     {
-        return new self('Transport error occured: '.$e->getMessage(), $e->getCode(), $e);
+        return new self('Transport error occurred: '.$e->getMessage(), $e->getCode(), $e);
     }
 }

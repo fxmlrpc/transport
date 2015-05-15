@@ -24,7 +24,7 @@ class TransportErrorTest extends \PHPUnit_Framework_TestCase
 
         $transportError = TransportError::createFromException($e);
 
-        $this->assertEquals('Transport error occured: Test message', $transportError->getMessage());
+        $this->assertEquals('Transport error occurred: Test message', $transportError->getMessage());
         $this->assertEquals(100, $transportError->getCode());
         $this->assertSame($e, $transportError->getPrevious());
     }
