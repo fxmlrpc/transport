@@ -28,7 +28,7 @@ This is the contract package for client transports for fXmlRpc.
 ## Testing
 
 ``` bash
-$ phpunit
+$ phpspec run
 ```
 
 

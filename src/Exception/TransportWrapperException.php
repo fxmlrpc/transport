@@ -16,17 +16,15 @@ namespace fXmlRpc\Client\Exception;
  *
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-final class TransportError extends \RuntimeException implements TransportException
+final class TransportWrapperException extends \RuntimeException implements TransportException
 {
     /**
      * Creates from an existing exception
      *
      * @param \Exception $e
-     *
-     * @return self
      */
-    public static function createFromException(\Exception $e)
+    public function __construct(\Exception $e)
     {
-        return new self('Transport error occurred: '.$e->getMessage(), $e->getCode(), $e);
+        parent::__construct('Transport error occurred: '.$e->getMessage(), $e->getCode(), $e);
     }
 }

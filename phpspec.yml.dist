@@ -1,0 +1,5 @@
+suites:
+  transport_suite:
+    namespace: fXmlRpc\Client
+    psr4_prefix: fXmlRpc\Client
+formatter.name: pretty
