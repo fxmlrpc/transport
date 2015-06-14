@@ -20,8 +20,9 @@
         "fxmlrpc/fxmlrpc": "^0.1@dev"
     },
     "require-dev": {
-        "phpspec/phpspec": "~2.1",
-        "henrikbjorn/phpspec-code-coverage" : "~1.0"
+        "phpspec/phpspec": "^2.1",
+        "henrikbjorn/phpspec-code-coverage" : "^1.0",
+        "doctrine/instantiator": ">=1.0.5"
     },
     "autoload": {
         "psr-4": {

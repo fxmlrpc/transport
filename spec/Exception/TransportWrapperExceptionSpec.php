@@ -20,25 +20,11 @@ class TransportWrapperExceptionSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        /**
-         * Ugly hack
-         *
-         * @see https://github.com/phpspec/phpspec/issues/704
-         */
-        $this->getWrappedObject();
-
         $this->shouldHaveType('fXmlRpc\Client\Exception\TransportWrapperException');
     }
 
     function it_is_a_transport_exception()
     {
-        /**
-         * Ugly hack
-         *
-         * @see https://github.com/phpspec/phpspec/issues/704
-         */
-        $this->getWrappedObject();
-
         $this->shouldImplement('fXmlRpc\Client\Exception\TransportException');
     }
 
